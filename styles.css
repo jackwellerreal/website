@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+img {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  height: 100vh;
+  padding: 64px;
+}
+
+.info img {
+  height: 300px;
+  border-radius: 50%;
+}
+
+.info h1 {
+  font-size: 44px;
+  letter-spacing: -1px;
+  margin-top: 16px;
+}
+
+.info p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #010101;
+  margin-top: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.list-item span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #010101;
+}
+
+.list-item svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+}
+
+.cards {
+  height: 100vh;
+  padding: 64px 64px 0px;
+  overflow-y: scroll;
+}
+
+.card {
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card a {
+  display: flex;
+  align-items: start;
+}
+
+.card svg {
+  width: 25px;
+  height: 25px;
+}
