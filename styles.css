@@ -1,109 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+:root {
+    --background: #f5f5f5;
+    --background-accent: hsl(0, 0%, 80%);
+
+    --text: #0a0a0a;
+
+    --accent-light: #699ce2;
+    --accent-light-hover: #699ce280;
+    --accent-dark: #5275ff;
+    --accent-dark-hover: #5275ff80;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
 }
 
 body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
 }
 
 img {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+hr {
+    border: 0;
+    border-bottom: 4px dotted var(--accent-light);
+    margin: 16px 0;
 }
 
-.info {
-  height: 100vh;
-  padding: 64px;
+.container {
+    width: 960px;
+    margin: 0 auto;
 }
 
-.info img {
-  height: 300px;
-  border-radius: 50%;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+    margin-bottom: 32px;
+    border-bottom: 8px dotted var(--accent-light);
 }
 
-.info h1 {
-  font-size: 44px;
-  letter-spacing: -1px;
-  margin-top: 16px;
+header h1 {
+    font-size: 32px;
 }
 
-.info p {
-  font-size: 20px;
-  font-weight: 500;
-  color: #010101;
-  margin-top: 8px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20%;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 12px;
+header nav a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 0.3s;
 }
 
-.list-item {
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-  text-decoration: none;
+header nav a:hover {
+    background-color: var(--accent-light-hover);
 }
 
-.list-item span {
-  font-size: 20px;
-  font-weight: 500;
-  color: #010101;
+main {
+    min-height: fit-content;
+    padding: 32px;
 }
 
-.list-item svg {
-  width: 25px;
-  height: 25px;
-  margin-right: 6px;
+main section h2 {
+    margin-bottom: 16px;
 }
 
-.cards {
-  height: 100vh;
-  padding: 64px;
-  overflow-y: scroll;
+main section .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
 }
 
-.card {
-  padding: 24px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+main section .item {
+    display: flex;
+    flex-direction: column;
 }
 
-.card:last-child {
-  margin-bottom: 0;
+main section .item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
 }
 
-.card h1 {
-  display: flex;
-  justify-content: space-between;
+main section .item h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
 }
 
-.card a {
-  display: flex;
-  align-items: start;
+main section .item p {
+    margin-top: 4px;
 }
 
-.card svg {
-  width: 25px;
-  height: 25px;
+main section .item svg {
+    height: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+    margin-top: 32px;
+    border-top: 8px dotted var(--accent-light);
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 20%;
+}
+
+footer nav a {
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+footer nav a:hover {
+    background-color: var(--accent-light-hover);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 16px;
+    }
+
+    main section .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    main section .items {
+        grid-template-columns: 1fr;
+    }
+    
 }
