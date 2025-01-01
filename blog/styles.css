@@ -48,6 +48,7 @@ main .content p {
     margin-bottom: 24px;
     font-size: 20px;
     font-weight: 400;
+    overflow-wrap: break-word;
 }
 
 main .content a {
@@ -65,6 +66,7 @@ main .content code {
     font-weight: 400;
     background-color: var(--background-accent);
     border-radius: 5px;
+    overflow-wrap: break-word;
 }
 
 main .content img {
@@ -86,4 +88,16 @@ main .content li {
     margin-top: 10px;
     font-size: 20px;
     font-weight: 400;
+}
+
+@media (max-width: 960px) {
+    main .content img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    main .title img {
+        width: 100%;
+    }
 }

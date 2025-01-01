@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
 
 :root {
     --background: #f5f5f5;
@@ -6,10 +7,9 @@
 
     --text: #0a0a0a;
 
-    --accent-light: #699ce2;
-    --accent-light-hover: #699ce280;
-    --accent-dark: #5275ff;
-    --accent-dark-hover: #5275ff80;
+    --accent: #699ce2;
+    --accent-hover: #699ce280;
+    --accent-selected: #699ce240;
 }
 
 * {
@@ -37,7 +37,7 @@ a {
 
 hr {
     border: 0;
-    border-bottom: 4px dotted var(--accent-light);
+    border-bottom: 4px dotted var(--accent);
     margin: 16px 0;
 }
 
@@ -53,17 +53,20 @@ header {
     width: 100%;
     padding: 32px;
     margin-bottom: 32px;
-    border-bottom: 8px dotted var(--accent-light);
+    border-bottom: 8px dotted var(--accent);
 }
 
 header h1 {
+    color: var(--accent);
+    font-family: "Coming Soon", serif;
     font-size: 32px;
+    font-weight: 900;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    min-width: 20%;
+    gap: 8px
 }
 
 header nav a {
@@ -73,11 +76,15 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: var(--accent-light-hover);
+    background-color: var(--accent-hover) !important;
+}
+
+header nav a.selected  {
+    background-color: var(--accent-selected);
 }
 
 main {
-    min-height: fit-content;
+    min-height: calc(100vh - calc(calc(145.2px + 112.6px)) - 64px);
     padding: 32px;
 }
 
@@ -96,7 +103,7 @@ main section .items {
 }
 
 main section .item {
-    flex: 0 0 calc(33.333% - 21.33px);
+    flex: 0 0 calc(30% - 21.33px);
     box-sizing: border-box;
 }
 
@@ -131,13 +138,13 @@ footer {
     width: 100%;
     padding: 32px;
     margin-top: 32px;
-    border-top: 8px dotted var(--accent-light);
+    border-top: 8px dotted var(--accent);
 }
 
 footer nav {
     display: flex;
     justify-content: space-between;
-    min-width: 20%;
+    gap: 8px
 }
 
 footer nav a {
@@ -147,7 +154,21 @@ footer nav a {
 }
 
 footer nav a:hover {
-    background-color: var(--accent-light-hover);
+    background-color: var(--accent-hover);
+}
+
+@media (max-width: 960px) {
+    header {
+        width: 100%;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    footer {
+        padding: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -164,8 +185,8 @@ footer nav a:hover {
         margin-top: 16px;
     }
 
-    main section .items {
-        grid-template-columns: repeat(2, 1fr);
+    main section .item {
+        flex: 0 0 calc(50% - 21.33px);
     }
 
     footer {
@@ -179,8 +200,7 @@ footer nav a:hover {
 }
 
 @media (max-width: 500px) {
-    main section .items {
-        grid-template-columns: 1fr;
+    main section .item {
+        flex: 0 0 calc(90% - 21.33px);
     }
-    
 }
