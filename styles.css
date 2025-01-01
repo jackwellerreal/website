@@ -100,6 +100,9 @@ main section .item {
     box-sizing: border-box;
 }
 
+main section .item a {
+    display: block;
+}
 
 main section .item img {
     width: 100%;
