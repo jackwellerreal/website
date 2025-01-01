@@ -81,20 +81,25 @@ main {
     padding: 32px;
 }
 
+main section {
+    margin-bottom: 32px;
+}
+
 main section h2 {
     margin-bottom: 16px;
 }
 
 main section .items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    overflow-x: auto;
     gap: 32px;
 }
 
 main section .item {
-    display: flex;
-    flex-direction: column;
+    flex: 0 0 calc(33.333% - 21.33px);
+    box-sizing: border-box;
 }
+
 
 main section .item img {
     width: 100%;
