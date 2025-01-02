@@ -107,6 +107,6 @@ So yeah, that is how I hacked Red Rooster to get unlimited free food. If you hav
 
 ---
 
-**I have not yet received a response from Craveable Brands or Red Rooster, but I will continue to update this article as the situation progresses.**
+I have not yet received a response from Craveable Brands or Red Rooster, but I will continue to update this article as the situation progresses.
 
-Download the full documentation of the exploit.
+[Download the full documentation of the exploit.](./assets/Documentation.docx)

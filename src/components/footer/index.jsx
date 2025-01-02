@@ -3,7 +3,7 @@ import styles from "./footer.module.css";
 export function Footer() {
 
     return (
-        <footer>
+        <footer className={styles["footer"]}>
             <p>&copy; 2023 Jack Weller</p>
             <nav>
                 <a href="https://github.com/jackwellerreal" target="_blank">

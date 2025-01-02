@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 export function Header() {
 
     return (
-        <header>
+        <header className={styles["header"]}>
             <a href="/">
                 <h1>Jack Weller</h1>
             </a>

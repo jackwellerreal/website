@@ -10,7 +10,7 @@ main .title {
 main .title h1 {
     width: 100%;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 16px;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
@@ -19,9 +19,17 @@ main .title h1 {
 main .title p {
     width: 100%;
     margin: 0 auto;
-    margin-top: 15px;
     font-size: 24px;
     font-weight: 400;
+    text-align: center;
+}
+
+main .title .subtitle {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-accent);
     text-align: center;
 }
 
@@ -81,7 +89,8 @@ main .content code {
     background-color: var(--background-accent);
     border: 1px solid var(--background-accent-2);
     border-radius: 5px;
-    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 main .content pre {
@@ -93,13 +102,15 @@ main .content pre {
     background-color: var(--background-accent);
     border: 1px solid var(--background-accent-2);
     border-radius: 5px;
-    overflow-wrap: break-word;
+    overflow-x: auto;
 }
 
 main .content pre code {
     padding: 0;
     background-color: transparent;
     border: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 main .content li {
