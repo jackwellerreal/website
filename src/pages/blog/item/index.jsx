@@ -1,7 +1,7 @@
 import styles from "./item.module.css";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import Markdown from 'react-markdown';
+import Markdown from "react-markdown";
 
 import { Header } from "../../../components/header";
 import { Footer } from "../../../components/footer";
@@ -14,25 +14,25 @@ export function BlogItem() {
     const [content, setContent] = useState("");
     const [readTime, setReadTime] = useState(0);
 
-    // Function to calculate read time in minutes
     function calculateReadTime(text) {
-        const wordCount = text.split(/\s+/).length; // Split text by spaces and count words
-        const wordsPerMinute = 300; // Average reading speed in words per minute
-        return Math.ceil(wordCount / wordsPerMinute); // Round up to the nearest minute
+        const wordCount = text.split(/\s+/).length;
+        const wordsPerMinute = 300;
+        return Math.ceil(wordCount / wordsPerMinute);
     }
 
     useEffect(() => {
-        // Dynamically fetch title and content based on blogId
         async function fetchBlogData() {
             try {
-                // Fetch title.json from the public folder
-                const titleData = await fetch(`/blog/${blogId}/title.json`).then(res => res.json());
-                // Fetch content.md from the public folder
-                const contentData = await fetch(`/blog/${blogId}/content.md`).then(res => res.text());
+                const titleData = await fetch(
+                    `/blog/${blogId}/title.json`
+                ).then((res) => res.json());
+                const contentData = await fetch(
+                    `/blog/${blogId}/content.md`
+                ).then((res) => res.text());
 
                 setTitle(titleData);
                 setContent(contentData);
-                setReadTime(calculateReadTime(contentData)); // Set read time after content is fetched
+                setReadTime(calculateReadTime(contentData));
             } catch (error) {
                 console.error("Error loading blog data:", error);
             }
@@ -41,8 +41,16 @@ export function BlogItem() {
         fetchBlogData();
     }, [blogId]);
 
-    if (!title) {
-        return <div>Loading...</div>;
+    if (!title || !content) {
+        return (
+            <div className={styles["container"]}>
+                <main>
+                    <div className={styles["content"]}>
+                        <p>Loading...</p>
+                    </div>
+                </main>
+            </div>
+        );
     }
 
     return (
@@ -54,13 +62,29 @@ export function BlogItem() {
                     <h1>{title.title}</h1>
                     <p>{title.description}</p>
                     <p className={styles["subtitle"]}>
-                        Estimated read time: {readTime} minute{readTime > 1 ? 's' : ''}
+                        Estimated read time: {readTime} minute
+                        {readTime > 1 ? "s" : ""}
                     </p>
                 </div>
                 <hr />
                 <div className={styles["content"]}>
-                    <Markdown>{content}</Markdown>
-                    <p><a href="/blog">Back to blog</a></p>
+                    <Markdown
+                        children={content}
+                        components={{
+                            a({ node, ...props }) {
+                                return (
+                                    <a
+                                        {...props}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    />
+                                );
+                            },
+                        }}
+                    />
+                    <p>
+                        <a href="/blog">Back to blog</a>
+                    </p>
                 </div>
             </main>
             <Footer />
