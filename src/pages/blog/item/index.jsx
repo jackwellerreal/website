@@ -14,13 +14,16 @@ export function BlogItem() {
     const [content, setContent] = useState("");
 
     useEffect(() => {
-        // Dynamically import title and content based on blogId
+        // Dynamically fetch title and content based on blogId
         async function fetchBlogData() {
             try {
-                const titleData = await import(`../../../../blog/${blogId}/title.json`);
+                // Fetch title.json from the public folder
+                const titleData = await fetch(`/blog/${blogId}/title.json`).then(res => res.json());
+                // Fetch content.md from the public folder
                 const contentData = await fetch(`/blog/${blogId}/content.md`).then(res => res.text());
+
                 setTitle(titleData);
-                setContent(contentData); // Set fetched Markdown content as a string
+                setContent(contentData); // Set fetched Markdown content
             } catch (error) {
                 console.error("Error loading blog data:", error);
             }
