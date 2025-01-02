@@ -54,22 +54,20 @@ main section .item svg {
 
 
 @media (max-width: 960px) {
-    main {
-        padding: 16px;
-    }
-}
-
-@media (max-width: 768px) {
     .container {
         width: 100%;
     }
 
+    main {
+        padding: 16px;
+    }
+
     main section .item {
-        flex: 0 0 calc(50% - 21.33px);
+        flex: 0 0 calc(45% - 21.33px);
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     main section .item {
         flex: 0 0 calc(90% - 21.33px);
     }

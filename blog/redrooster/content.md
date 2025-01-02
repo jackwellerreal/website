@@ -1,7 +1,3 @@
-# Free Chicken Exploit
-
-## How I hacked Red Rooster to get unlimited free food.
-
 Red Rooster is the sixth biggest restaurant in Australia, known for their fried chicken and chips. They have around 350 stores spread across the country and are a popular choice for many Australians when they want a quick meal.
 
 One Friday night, I was feeling hungry and decided to order Red Rooster for dinner using their mobile app. The mobile app allows customers to order and pay for food; the app also allows customers to create an account to get rewards and vouchers. I had previously created an account and had a few vouchers saved up, so I decided to use them to get a discount on my order.
@@ -16,6 +12,9 @@ I later realized that the DCODE is not used to identify the voucher for the user
 After some more time tinkering with the website dev tools, I discovered that if you apply a $5 discount voucher to your order, the server will remove the value of the voucher from the total cost of the order, but there is an issue: in order to get the discount, you need to have spent at least $15 on your order. But I found a way to bypass this by messing with the `cart` variable in the session storage in the browser.
 
 The `cart` variable is a JSON object that contains the items in your cart, the total cost of the items in your cart, and a list of all the vouchers you applied to your cart, which contains all the conditions of the voucher. I found that if I changed the `minimumSpend` variable to `0` and set the sessions storage variable to the modified JSON object, the website would think that the voucher was to get a $5 discount on any order, regardless of the total cost.
+
+![](./assets/5dollardiscount.jpg)
+![](./assets/5dollardiscountcode.jpg)
 
 Perfect, I had figured out a way to get a $5 discount on any order, regardless of the overall price. But if I wanted to get a burger or anything else that cost more than $5, I would need to find a way to figure out how to set the `total` variable in the cart object to $0. So I tried just that; I set the `total` variable to `0`, and the website accepted the total price of the order as $0. I had successfully found a way to get unlimited free food from Red Rooster.
 
@@ -83,7 +82,10 @@ The code below shows an example of the cart variable in the session storage.
 This is very cool but has a downside, the main one being it only works with pickup in-store orders, no delivery; this is because the delivery is controlled by DoorDash. Other than that, it is a very easy way to get free food from Red Rooster.
 
 So yeah, that is how I hacked Red Rooster to get unlimited free food. If you have any questions or work at Red Rooster and want to contact me, feel free to [email me](mailto:redroosterexploit@jackweller.me). If you enjoyed reading this article, please consider sending [me some bitcoin](bitcoin:bc1pz33pxxuxz4jcapkulr5k0haf2kednfwev7xkvcvhdh2rp2qy0rds4nmdrl) so I can buy more Red Rooster, legally...
-Timeline of Events
+
+---
+
+## Timeline of Events
 
 * December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
 
@@ -102,6 +104,8 @@ Timeline of Events
 * December 18, 2024: I sent Craveable Brands an Instagram DM following up on the last message, asking who I should contact.
 
 * December 23, 2024: I sent a bug report in the Red Rooster app, asking them to send me an email.
+
+---
 
 **I have not yet received a response from Craveable Brands or Red Rooster, but I will continue to update this article as the situation progresses.**
 
