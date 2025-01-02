@@ -1,0 +1,41 @@
+{
+    "projects": [
+        {
+            "repo": "https://github.com/jackwellerreal/chat",
+            "title": "Chat Client",
+            "description": "This is  a clone of Discord using Firebase. It was a HTML file but I migrated it to React and Electron."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/chat",
+            "title": "BOM Website",
+            "description": "I redesigned the Bureau of Meteorology website because it's extremely outdated."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/nodejs-maze",
+            "title": "NodeJS Maze",
+            "description": "This is a maze game that I made for a hackerthon. It runs in the CLI and is really inefficient."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/konnect",
+            "title": "Konnect",
+            "description": "This is my first major project I've worked on. It's a twitter clone made using React and Firebase."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/bom-radar",
+            "title": "BOM Radar GIF",
+            "description": "This uses the BOM FTP server to stitch together radar images to create a GIF."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/projectmanager",
+            "title": "Project Manager",
+            "description": "I created this so I can easily create folders for my projects, it also has templates for React, etc."
+        }
+    ],
+
+    "blog": [
+        {
+            "id": "redrooster",
+            "title": "How I hacked Red Rooster to get unlimited free food."
+        }
+    ]
+}
