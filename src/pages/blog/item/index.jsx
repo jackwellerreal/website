@@ -56,37 +56,45 @@ export function BlogItem() {
     return (
         <div className={styles["container"]}>
             <Header />
-            <main>
-                <div className={styles["title"]}>
-                    <img src={title.image} alt="Blog title" />
-                    <h1>{title.title}</h1>
-                    <p>{title.description}</p>
-                    <p className={styles["subtitle"]}>
-                        Estimated read time: {readTime} minute
-                        {readTime > 1 ? "s" : ""}
-                    </p>
-                </div>
-                <hr />
-                <div className={styles["content"]}>
-                    <Markdown
-                        children={content}
-                        components={{
-                            a({ node, ...props }) {
-                                return (
-                                    <a
-                                        {...props}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    />
-                                );
-                            },
-                        }}
-                    />
-                    <p>
-                        <a href="/blog">Back to blog</a>
-                    </p>
-                </div>
-            </main>
+            {!title || !content ? (
+                <main>
+                    <div className={styles["content"]}>
+                        <p>Loading...</p>
+                    </div>
+                </main>
+            ) : (
+                <main>
+                    <div className={styles["title"]}>
+                        <img src={title.image} alt="Blog title" />
+                        <h1>{title.title}</h1>
+                        <p>{title.description}</p>
+                        <p className={styles["subtitle"]}>
+                            Estimated read time: {readTime} minute
+                            {readTime > 1 ? "s" : ""}
+                        </p>
+                    </div>
+                    <hr />
+                    <div className={styles["content"]}>
+                        <Markdown
+                            children={content}
+                            components={{
+                                a({ node, ...props }) {
+                                    return (
+                                        <a
+                                            {...props}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        />
+                                    );
+                                },
+                            }}
+                        />
+                        <p>
+                            <a href="/blog">Back to blog</a>
+                        </p>
+                    </div>
+                </main>
+            )}
             <Footer />
         </div>
     );
