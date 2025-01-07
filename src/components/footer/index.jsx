@@ -4,7 +4,9 @@ export function Footer() {
 
     return (
         <footer className={styles["footer"]}>
-            <p>&copy; 2023 Jack Weller</p>
+            <p>&copy; {
+                new Date().getFullYear()
+            } Jack Weller</p>
             <nav>
                 <a href="https://github.com/jackwellerreal" target="_blank">
                     Github
