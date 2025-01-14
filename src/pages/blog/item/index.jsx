@@ -2,6 +2,7 @@ import styles from "./item.module.css";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+import moment from "moment";
 
 import { Header } from "../../../components/header";
 import { Footer } from "../../../components/footer";
@@ -69,8 +70,16 @@ export function BlogItem() {
                         <h1>{title.title}</h1>
                         <p>{title.description}</p>
                         <p className={styles["subtitle"]}>
-                            Estimated read time: {readTime} minute
-                            {readTime > 1 ? "s" : ""}
+                            <span>
+                                {
+                                    moment(title.date, "DD/MM/YYYY").fromNow()
+                                }
+                            </span>
+                            <span>•</span>
+                            <span>
+                                Read time: {readTime} minute
+                                {readTime > 1 ? "s" : ""}
+                            </span>
                         </p>
                     </div>
                     <hr />
