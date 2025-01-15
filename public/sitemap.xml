@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.jackweller.com/</loc>
+		<loc>https://www.jackweller.me/</loc>
 	</url>
     <url>
-        <loc>https://www.jackweller.com/projects</loc>
+        <loc>https://www.jackweller.me/projects</loc>
     </url>
     <url>
-        <loc>https://www.jackweller.com/blog</loc>
+        <loc>https://www.jackweller.me/blog</loc>
     </url>
     <url>
-        <loc>https://www.jackweller.com/contact</loc>
+        <loc>https://www.jackweller.me/contact</loc>
     </url>
 </urlset>
