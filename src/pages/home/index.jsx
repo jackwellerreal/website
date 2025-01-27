@@ -10,6 +10,9 @@ export function Home() {
         <div className={styles["container"]}>
             <Header />
             <main>
+                <section id="about">
+                    <p>My personal website. Here I share my projects and post what I am up to on my blog</p>
+                </section>
                 <section id="projects">
                     <h2>Projects</h2>
                     <div id="projectItems" className={styles["items"]}>

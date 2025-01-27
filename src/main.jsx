@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 
@@ -9,8 +8,6 @@ import { Projects } from "./pages/projects";
 import { Blog } from "./pages/blog";
 import { BlogItem } from "./pages/blog/item";
 import { Contact } from "./pages/contact";
-
-import content from "../items.json";
 
 const root = document.getElementById("root");
 
