@@ -30,5 +30,7 @@
             "title": "Project Manager",
             "description": "I created this so I can easily create folders for my projects, it also has templates for React, etc."
         }
+    ],
+    "blog": [
     ]
 }
