@@ -103,26 +103,20 @@ So yeah, that is how I hacked Red Rooster to get unlimited free food. If you hav
 
 ## Timeline of Events
 
--   December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
-
--   December 11, 2024: I sent an email to Craveable Brands asking if they had a bug bounty policy, inquiring about how I could report security vulnerabilities.
-
--   December 12, 2024: I called Craveable Brands' customer support and left a voicemail with my details, explaining the security vulnerability I had found.
-
--   December 14, 2024: I sent Craveable Brands an email stating that I had found a security vulnerability and requesting the appropriate contact to report it.
-
--   December 14, 2024: I documented all the details about the exploit, including its impact and potential fixes, to ensure clear and accurate communication of the issue.
-
--   December 14, 2024: I sent Red Rooster an Instagram DM stating that I had found a security vulnerability and requesting the appropriate contact to report it.
-
--   December 16, 2024: I left a comment on their latest post informing them to check their direct messages since I have found a security vulnerability.
-
--   December 18, 2024: I sent Craveable Brands an Instagram DM following up on the last message, asking who I should contact.
-
--   December 23, 2024: I sent a bug report in the Red Rooster app, asking them to send me an email.
-
+- December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
+- December 11, 2024: I sent an email to Craveable Brands asking if they had a bug bounty policy, inquiring about how I could report security vulnerabilities.
+- December 12, 2024: I called Craveable Brands' customer support and left a voicemail with my details, explaining the security vulnerability I had found.
+- December 14, 2024: I sent Craveable Brands an email stating that I had found a security vulnerability and requesting the appropriate contact to report it.
+- December 14, 2024: I documented all the details about the exploit, including its impact and potential fixes, to ensure clear and accurate communication of the issue.
+- December 14, 2024: I sent Red Rooster an Instagram DM stating that I had found a security vulnerability and requesting the appropriate contact to report it.
+- December 16, 2024: I left a comment on their latest post informing them to check their direct messages since I have found a security vulnerability.
+- December 18, 2024: I sent Craveable Brands an Instagram DM following up on the last message, asking who I should contact.
+- December 23, 2024: I sent a bug report in the Red Rooster app, asking them to send me an email.
+- January 28, 2025: I sent a message to their contact form on their website, telling them what I had found.
+- **January 29, 2025: I recieved an email from Craveable Brands asking for more information.**
+- January 30, 2025: I responded with the document below.
 ---
 
-I have not yet received a response from Craveable Brands or Red Rooster, but I will continue to update this article as the situation progresses.
+
 
 [Download the full documentation of the exploit.](./assets/Documentation.docx)
