@@ -108,3 +108,14 @@ In my ICT class for school, we were taught how to change prices on websites usin
 Remember, ALWAYS get permission before you try to find vulnerabilities in a website. I was lucky that Red Rooster was understanding and thankful for my report, but not all companies are like that.
 
 ### Thanks for reading!
+
+## Timeline
+
+- December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
+- December 11, 2024 - December 23, 2024: I send numerous emails to Craveable Brands, the parent company of Red Rooster, but got no response.
+- January 28, 2025: I sent a message to their contact form on their website, telling them what I had found.
+- **January 29, 2025: I recieved an email from Craveable Brands asking for more information.**
+- January 30, 2025: I responded with a detailed explanation of the exploit.
+- Febuary 12, 2025: I followed up with Craveable Brands to see if they had made any progress.
+- Febuary 14, 2025: I recieved an email from support saying that they were working on a fix.
+- **Febuary 14, 2025: I recieved an email from the Cheif Information Officer of Craveable Brands thanking me for my report and informing me that they were working on a fix.**
