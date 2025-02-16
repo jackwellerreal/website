@@ -85,9 +85,8 @@ export function BlogItem() {
                     <hr />
                     <div className={styles["content"]}>
                         <Markdown
-                            children={content}
                             components={{
-                                a({ node, ...props }) {
+                                a({ ...props }) {
                                     return (
                                         <a
                                             {...props}
@@ -97,9 +96,13 @@ export function BlogItem() {
                                     );
                                 },
                             }}
-                        />
-                        <p>
+                        >
+                            {content}
+                        </Markdown>
+                        <hr />
+                        <p style={{ display: "flex", justifyContent: "space-between" }}>
                             <a href="/blog">Back to blog</a>
+                            <a href={`https://twitter.com/intent/tweet?text=${title.share}`} target="_blank">Share on Twitter</a>
                         </p>
                     </div>
                 </main>

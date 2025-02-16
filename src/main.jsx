@@ -6,7 +6,7 @@ import "./styles.css";
 import { Home } from "./pages/home";
 import { Projects } from "./pages/projects";
 import { Blog } from "./pages/blog";
-//import { BlogItem } from "./pages/blog/item";
+import { BlogItem } from "./pages/blog/item";
 import { Contact } from "./pages/contact";
 
 const root = document.getElementById("root");
@@ -21,7 +21,7 @@ ReactDOM.createRoot(root).render(
             </Route>
             <Route path="blog">
                 <Route index element={<Blog />} />
-                {/*<Route path=":id" element={<BlogItem />} />*/}
+                <Route path=":id" element={<BlogItem />} />
             </Route>
 
             <Route path="contact" element={<Contact />} />

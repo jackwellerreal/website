@@ -23,7 +23,7 @@ The `cart` variable is a JSON object that contains the items in your cart, the t
             "redemptionsAllowed": 1,
             "redeemableAt": ["All stores"],
             "voucherValue": 5,
-            "minimumSpend": 0,
+            "minimumSpend": 0, // <-- Manipulated minimumSpend
         }
     }
 }
@@ -52,7 +52,7 @@ The code below shows an example of the cart variable in the session storage.
                     "selected": [
                         {
                             "name": "375ml 7up",
-                            "price": 0
+                            "price": 375
                         }
                     ]
                 }
@@ -90,33 +90,21 @@ The code below shows an example of the cart variable in the session storage.
             "itemPrice": 375
         }
     ],
-    "total": 0, // Manipulated total
+    "total": 0, // <-- Manipulated total
     "deliveryFee": 0
 }
 ```
 
-This is very cool but has a downside, the main one being it only works with pickup in-store orders, no delivery; this is because the delivery is controlled by DoorDash. Other than that, it is a very easy way to get free food from Red Rooster.
+This is very cool but has a major downside, it only works with pickup in-store orders, and not delivery; this is because the delivery is controlled by DoorDash and has more extensive checks to ensure .
 
-So yeah, that is how I hacked Red Rooster to get unlimited free food. If you have any questions or work at Red Rooster and want to contact me, feel free to [email me](mailto:redroosterexploit@jackweller.me). If you enjoyed reading this article, please consider sending [me some bitcoin](bitcoin:bc1pz33pxxuxz4jcapkulr5k0haf2kednfwev7xkvcvhdh2rp2qy0rds4nmdrl) so I can buy more Red Rooster, legally...
+After two months of trying to get in contact with their parent company, Craveable Brands, I finally got a response from the Cheif Information Officer who was very thankful for my report and immediately contacted his development team to start working on a fix. And of course this happened on a Friday, I feel bad for the developers who are about to go home for the weekend and were informed of a critical security issue that needed to be fixed.
 
----
+## Conclusion
 
-## Timeline of Events
+This was my first experience with discovering a security vulnerability in a major company, and it was a lot of fun tinkering with the website to find a way to get free food.
 
-- December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
-- December 11, 2024: I sent an email to Craveable Brands asking if they had a bug bounty policy, inquiring about how I could report security vulnerabilities.
-- December 12, 2024: I called Craveable Brands' customer support and left a voicemail with my details, explaining the security vulnerability I had found.
-- December 14, 2024: I sent Craveable Brands an email stating that I had found a security vulnerability and requesting the appropriate contact to report it.
-- December 14, 2024: I documented all the details about the exploit, including its impact and potential fixes, to ensure clear and accurate communication of the issue.
-- December 14, 2024: I sent Red Rooster an Instagram DM stating that I had found a security vulnerability and requesting the appropriate contact to report it.
-- December 16, 2024: I left a comment on their latest post informing them to check their direct messages since I have found a security vulnerability.
-- December 18, 2024: I sent Craveable Brands an Instagram DM following up on the last message, asking who I should contact.
-- December 23, 2024: I sent a bug report in the Red Rooster app, asking them to send me an email.
-- January 28, 2025: I sent a message to their contact form on their website, telling them what I had found.
-- **January 29, 2025: I recieved an email from Craveable Brands asking for more information.**
-- January 30, 2025: I responded with the document below.
----
+In my ICT class for school, we were taught how to change prices on websites using the developer tools, but I never thought that would apply to the real world. Turns out, it does.
 
+Remember, ALWAYS get permission before you try to find vulnerabilities in a website. I was lucky that Red Rooster was understanding and thankful for my report, but not all companies are like that.
 
-
-[Download the full documentation of the exploit.](./assets/Documentation.docx)
+### Thanks for reading!
