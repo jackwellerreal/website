@@ -109,6 +109,8 @@ Remember, ALWAYS get permission before you try to find vulnerabilities in a webs
 
 ### Thanks for reading!
 
+---
+
 ## Timeline
 
 - December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
