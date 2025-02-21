@@ -2,6 +2,7 @@ import styles from "./item.module.css";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 import moment from "moment";
 
 import { Header } from "../../../components/header";
@@ -85,6 +86,7 @@ export function BlogItem() {
                     <hr />
                     <div className={styles["content"]}>
                         <Markdown
+                            rehypePlugins={[rehypeRaw]}
                             components={{
                                 a({ ...props }) {
                                     return (
