@@ -12,7 +12,7 @@ export function BlogItem() {
     let params = useParams();
     const blogId = params.id;
 
-    const [title, setTitle] = useState(null);
+    const [metadata, setMetadata] = useState(null);
     const [content, setContent] = useState("");
     const [readTime, setReadTime] = useState(0);
 
@@ -25,14 +25,14 @@ export function BlogItem() {
     useEffect(() => {
         async function fetchBlogData() {
             try {
-                const titleData = await fetch(
-                    `/blog/${blogId}/title.json`
+                const metaData = await fetch(
+                    `/blog/${blogId}/metadata.json`
                 ).then((res) => res.json());
                 const contentData = await fetch(
                     `/blog/${blogId}/content.md`
                 ).then((res) => res.text());
 
-                setTitle(titleData);
+                setMetadata(metaData);
                 setContent(contentData);
                 setReadTime(calculateReadTime(contentData));
             } catch (error) {
@@ -43,7 +43,7 @@ export function BlogItem() {
         fetchBlogData();
     }, [blogId]);
 
-    if (!title || !content) {
+    if (!metadata || !content) {
         return (
             <div className={styles["container"]}>
                 <main>
@@ -58,7 +58,7 @@ export function BlogItem() {
     return (
         <div className={styles["container"]}>
             <Header />
-            {!title || !content ? (
+            {!metadata || !content ? (
                 <main>
                     <div className={styles["content"]}>
                         <p>Loading...</p>
@@ -67,13 +67,13 @@ export function BlogItem() {
             ) : (
                 <main>
                     <div className={styles["title"]}>
-                        <img src={title.image} alt="Blog title" />
-                        <h1>{title.title}</h1>
-                        <p>{title.description}</p>
+                        <img src={metadata.image} alt="Blog title" />
+                        <h1>{metadata.title}</h1>
+                        <p>{metadata.description}</p>
                         <p className={styles["subtitle"]}>
                             <span>
                                 {
-                                    moment(title.date, "DD/MM/YYYY").fromNow()
+                                    moment(metadata.date, "DD/MM/YYYY").fromNow()
                                 }
                             </span>
                             <span>•</span>
@@ -104,7 +104,7 @@ export function BlogItem() {
                         <hr />
                         <p style={{ display: "flex", justifyContent: "space-between" }}>
                             <a href="/blog">Back to blog</a>
-                            <a href={`https://twitter.com/intent/tweet?text=${title.share}`} target="_blank">Share on Twitter</a>
+                            <a href={`https://twitter.com/intent/tweet?text=${metadata.share}`} target="_blank">Share on Twitter</a>
                         </p>
                     </div>
                 </main>

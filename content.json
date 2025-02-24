@@ -1,4 +1,16 @@
 {
+    "name": "Jack Weller",
+    "description": "Currently working on my Certificate III in Information Technology",
+    "github": "jackwellerreal",
+    "skills": [],
+    "experience": [],
+    "blog": [
+        {
+            "id": "redrooster",
+            "title": "How I hacked Red Rooster to get unlimited free food.",
+            "date": "02/01/2025"
+        }
+    ],
     "projects": [
         {
             "repo": "https://github.com/jackwellerreal/chat",
@@ -30,12 +42,5 @@
             "title": "Project Manager",
             "description": "I created this so I can easily create folders for my projects, it also has templates for React, etc."
         }
-    ],
-    "blog": [
-        {
-            "id": "redrooster",
-            "title": "How I hacked Red Rooster to get unlimited free food.",
-            "date": "02/01/2025"
-       }
     ]
 }

@@ -8,6 +8,7 @@ import { Projects } from "./pages/projects";
 import { Blog } from "./pages/blog";
 import { BlogItem } from "./pages/blog/item";
 import { Contact } from "./pages/contact";
+import { NotFound } from "./pages/not-found";
 
 const root = document.getElementById("root");
 
@@ -26,7 +27,7 @@ ReactDOM.createRoot(root).render(
 
             <Route path="contact" element={<Contact />} />
 
-            <Route path="*" element={<div>404</div>} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
     </BrowserRouter>
 );

@@ -3,7 +3,7 @@ import styles from "../home/home.module.css";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 
-import content from "../../../items.json";
+import content from "../../../content.json";
 
 export function Blog() {
     return (

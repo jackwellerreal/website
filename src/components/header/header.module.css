@@ -8,6 +8,10 @@
     border-bottom: 8px dotted var(--accent);
 }
 
+.header a {
+    text-decoration: none !important;
+}
+
 .header h1 {
     color: var(--accent);
     font-family: "Coming Soon", serif;
