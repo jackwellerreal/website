@@ -16,12 +16,9 @@ export function Home() {
                 {content.skills.length > 0 && (
                     <section id="skills">
                         <h2>Skills</h2>
-                        <div id="skillItems" className={styles["items"]}>
+                        <div id="skillItems" className={styles["items"]} style={{ gridTemplateColumns: `repeat(${content.skills.length}, 1fr)` }}>
                             {content.skills.map((skill, index) => (
-                                <div key={index} className={styles["item"]}>
-                                    <h3>{skill.title}</h3>
-                                    <p>{skill.description}</p>
-                                </div>
+                                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill}/${skill}-original.svg`} key={index} />
                             ))}
                         </div>
                     </section>

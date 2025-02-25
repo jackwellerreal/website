@@ -2,7 +2,15 @@
     "name": "Jack Weller",
     "description": "Currently working on my Certificate III in Information Technology",
     "github": "jackwellerreal",
-    "skills": [],
+    "skills": [
+        "react",
+        "nodejs",
+        "firebase",
+        "javascript",
+        "python",
+        "linux",
+        "ubuntu"
+    ],
     "experience": [],
     "blog": [
         {
