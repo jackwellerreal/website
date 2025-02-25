@@ -6,9 +6,10 @@
         "react",
         "nodejs",
         "firebase",
-        "javascript",
-        "python",
-        "linux",
+        "typescript",
+        "vscode",
+        "git",
+        "docker",
         "ubuntu"
     ],
     "experience": [],
