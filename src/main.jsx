@@ -27,7 +27,7 @@ ReactDOM.createRoot(root).render(
 
             <Route path="contact" element={<Contact />} />
 
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} status={404} />
         </Routes>
     </BrowserRouter>
 );
