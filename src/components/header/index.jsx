@@ -1,7 +1,6 @@
 import styles from "./header.module.css";
 
 export function Header() {
-
     return (
         <header className={styles["header"]}>
             <a href="/">
@@ -10,7 +9,6 @@ export function Header() {
             <nav>
                 <a href="/projects/">Projects</a>
                 <a href="/blog/">Blog</a>
-                <a href="/contact/">Contact</a>
             </nav>
         </header>
     );

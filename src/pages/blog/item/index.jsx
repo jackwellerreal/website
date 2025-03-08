@@ -72,9 +72,7 @@ export function BlogItem() {
                         <p>{metadata.description}</p>
                         <p className={styles["subtitle"]}>
                             <span>
-                                {
-                                    moment(metadata.date, "DD/MM/YYYY").fromNow()
-                                }
+                                {moment(metadata.date, "DD/MM/YYYY").fromNow()}
                             </span>
                             <span>•</span>
                             <span>
@@ -102,9 +100,19 @@ export function BlogItem() {
                             {content}
                         </Markdown>
                         <hr />
-                        <p style={{ display: "flex", justifyContent: "space-between" }}>
+                        <p
+                            style={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                            }}
+                        >
                             <a href="/blog">Back to blog</a>
-                            <a href={`https://twitter.com/intent/tweet?text=${metadata.share}`} target="_blank">Share on Twitter</a>
+                            <a
+                                href={`https://twitter.com/intent/tweet?text=${metadata.share}`}
+                                target="_blank"
+                            >
+                                Share on Twitter
+                            </a>
                         </p>
                     </div>
                 </main>

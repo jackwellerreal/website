@@ -3,7 +3,7 @@ import styles from "../home/home.module.css";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 
-export function NotFound() {
+export function NotFoundPage() {
     return (
         <div className={styles["container"]}>
             <Header />

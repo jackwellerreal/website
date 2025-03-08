@@ -81,11 +81,11 @@ main .content img {
     max-width: 75%;
     margin: 8px auto;
     border-radius: 16px;
-} 
+}
 
 main .content code {
     padding: 2px;
-    font-family: 'Fira Code', Consolas, monospace;
+    font-family: "Fira Code", Consolas, monospace;
     font-size: 18px;
     font-weight: 400;
     background-color: var(--background-accent);

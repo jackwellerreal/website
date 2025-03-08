@@ -23,7 +23,7 @@ The `cart` variable is a JSON object that contains the items in your cart, the t
             "redemptionsAllowed": 1,
             "redeemableAt": ["All stores"],
             "voucherValue": 5,
-            "minimumSpend": 0, // <-- Manipulated minimumSpend
+            "minimumSpend": 0 // <-- Manipulated minimumSpend
         }
     }
 }
@@ -99,7 +99,7 @@ This is very cool but has a major downside, it only works with pickup in-store o
 
 After two months of trying to get in contact with their parent company, Craveable Brands, I finally got a response from the Cheif Information Officer who was very thankful for my report and immediately contacted his development team to start working on a fix. And of course this happened on a Friday, I feel bad for the developers who are about to go home for the weekend and were informed of a critical security issue that needed to be fixed.
 
-After about a week from getting in contact, I recieved a "small gift" in the mail with 4 $50 vouchers for Red Rooster. 
+After about a week from getting in contact, I recieved a "small gift" in the mail with 4 $50 vouchers for Red Rooster.
 
 <img src="./assets/reward.png" alt="4, $50 Red Rooster Vouchers" width="50%" style="width:50%;"/>
 

@@ -15,9 +15,16 @@
 }
 
 .footer nav a {
+    display: flex;
+    justify-content: center;
     padding: 8px 16px;
     border-radius: 4px;
     transition: 0.3s;
+}
+
+.footer nav a svg {
+    width: 24px;
+    height: 24px;
 }
 
 .footer nav a:hover {
