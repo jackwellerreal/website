@@ -46,7 +46,8 @@ main section .item img {
     border-radius: 4px;
 }
 
-main section .item h3 {
+main section .item h3,
+main section .item p {
     display: flex;
     justify-content: space-between;
 }

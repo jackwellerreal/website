@@ -9,7 +9,13 @@ export function ExperienceComponent() {
             <div id="experienceItems" className={styles["items"]}>
                 {content.experience.map((experience, index) => (
                     <div key={index} className={styles["item"]}>
-                        <h3>{experience.title}</h3>
+                        <h3>
+                            {experience.title}
+                            <span style={{ fontSize: "12px" }}>
+                                {experience.time}
+                            </span>
+                        </h3>
+                        <h5>@ {experience.location}</h5>
                         <p>{experience.description}</p>
                     </div>
                 ))}

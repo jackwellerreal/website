@@ -1,18 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap");
+@import url(../public/fonts/fonts.css);
 
 :root {
+    /* Background Colours */
     --background: hsl(0, 0%, 96%);
     --background-accent: hsl(0, 0%, 90%);
     --background-accent-2: hsl(0, 0%, 80%);
 
+    /* Text Colours */
     --text: hsl(0, 0%, 4%);
     --text-accent: hsl(0, 0%, 25%);
 
+    /* Accent Colours */
     --accent: #699ce2;
     --accent-hover: #699ce280;
     --accent-selected: #699ce240;
+
+    /* Font Families */
+    --font-normal: "Poppins", system-ui, sans-serif;
+    --font-title: "Coming Soon", "Poppins", system-ui, sans-serif;
+    --font-code: "Fira Code", Consolas, monospace;
 }
 
 * {
@@ -25,7 +31,7 @@
 
 body {
     min-height: 100vh;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-normal);
     background-color: var(--background);
 }
 

@@ -2,6 +2,7 @@
     "name": "Jack Weller",
     "description": "Currently working on my Certificate III in Information Technology",
     "github": "jackwellerreal",
+    "bitcoin": "bc1pz33pxxuxz4jcapkulr5k0haf2kednfwev7xkvcvhdh2rp2qy0rds4nmdrl",
     "skills": [
         "react",
         "nodejs",
@@ -12,14 +13,17 @@
         "docker",
         "ubuntu"
     ],
+    "experience": [],
     "blog": [
         {
             "id": "redrooster",
             "title": "How I hacked Red Rooster to get unlimited free food",
-            "date": "02/01/2025"
+            "image": "/blog/redrooster/assets/title.jpg",
+            "date": "16/02/2025",
+            "share": "This%20high%20school%20student%20hacked%20Australia%27s%20biggest%20chicken%20chain%20to%20get%20free%20food!%0A%0Ahttps%3A%2F%2Fjackweller.me%2Fblog%2Fredrooster%2F",
+            "featuredin": []
         }
     ],
-    "experience": [],
     "projects": [
         {
             "repo": "https://github.com/jackwellerreal/chat",
@@ -44,7 +48,7 @@
         {
             "repo": "https://github.com/jackwellerreal/bom-radar",
             "title": "BOM Radar GIF",
-            "description": "This uses the BOM FTP server to stitch together radar images to create a GIF."
+            "description": "This uses the BOM FTP server to get radar images and stitches them together together into a GIF."
         },
         {
             "repo": "https://github.com/jackwellerreal/projectmanager",

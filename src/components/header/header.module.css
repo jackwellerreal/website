@@ -14,7 +14,7 @@
 
 .header h1 {
     color: var(--accent);
-    font-family: "Coming Soon", serif;
+    font-family: var(--font-title);
     font-size: 32px;
     font-weight: 900;
 }

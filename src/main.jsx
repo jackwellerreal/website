@@ -6,7 +6,7 @@ import "./styles.css";
 import { HomePage } from "./pages/home";
 import { ProjectsPage } from "./pages/projects";
 import { BlogPage } from "./pages/blog";
-import { BlogItem } from "./pages/blog/item";
+import { BlogItemPage } from "./pages/blog/item";
 import { NotFoundPage } from "./pages/not-found";
 
 const root = document.getElementById("root");
@@ -21,7 +21,7 @@ ReactDOM.createRoot(root).render(
             </Route>
             <Route path="blog">
                 <Route index element={<BlogPage />} />
-                <Route path=":id" element={<BlogItem />} />
+                <Route path=":id" element={<BlogItemPage />} />
             </Route>
 
             <Route path="*" element={<NotFoundPage />} status={404} />
