@@ -1,25 +1,51 @@
 @import url(../public/fonts/fonts.css);
 
-:root {
-    /* Background Colours */
-    --background: #f2f3f5;
-    --background-accent: #e2e4e9;
-    --background-accent-2: #c5cad3;
-    --background-hover: #0d131c1c;
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Background Colours */
+        --background: hsl(220, 13%, 95%);
+        --background-accent: hsl(223, 14%, 90%);
+        --background-accent-2: hsl(219, 14%, 80%);
+        --background-hover: hsla(216, 37%, 8%, 0.1);
 
-    /* Text Colours */
-    --text: #0d131c;
-    --text-accent: #0d131c40;
+        /* Text Colours */
+        --text: hsl(216, 37%, 8%);
+        --text-accent: hsla(216, 37%, 8%, 0.25);
 
-    /* Accent Colours */
-    --accent: #699ce2;
-    --accent-hover: #699ce280;
-    --accent-selected: #699ce240;
+        /* Accent Colours */
+        --accent: hsl(215, 68%, 65%);
+        --accent-hover: hsla(215, 68%, 65%, 0.5);
+        --accent-selected: hsla(215, 68%, 65%, 0.25);
 
-    /* Font Families */
-    --font-normal: "Poppins", system-ui, sans-serif;
-    --font-title: "Coming Soon", "Poppins", system-ui, sans-serif;
-    --font-code: "Fira Code", Consolas, monospace;
+        /* Font Families */
+        --font-normal: "Poppins", system-ui, sans-serif;
+        --font-title: "Coming Soon", "Poppins", system-ui, sans-serif;
+        --font-code: "Fira Code", Consolas, monospace;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Background Colours */
+        --background: hsl(216, 37%, 8%);
+        --background-accent: hsl(216, 37%, 15%);
+        --background-accent-2: hsl(216, 37%, 20%);
+        --background-hover: hsla(220, 13%, 95%, 0.1);
+
+        /* Text Colours */
+        --text: hsl(220, 13%, 95%);
+        --text-accent: hsla(220, 13%, 95%, 0.25);
+
+        /* Accent Colours */
+        --accent: hsl(215, 68%, 65%);
+        --accent-hover: hsla(215, 68%, 65%, 0.5);
+        --accent-selected: hsla(215, 68%, 65%, 0.25);
+
+        /* Font Families */
+        --font-normal: "Poppins", system-ui, sans-serif;
+        --font-title: "Coming Soon", "Poppins", system-ui, sans-serif;
+        --font-code: "Fira Code", Consolas, monospace;
+    }
 }
 
 * {

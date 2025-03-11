@@ -14,10 +14,15 @@ export function SkillsComponent() {
                 }}
             >
                 {content.skills.map((skill, index) => (
-                    <img
-                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill}/${skill}-original.svg`}
+                    <a
                         key={index}
-                    />
+                        href={`https://www.google.com/search?q=${skill}`}
+                        target="_blank"
+                    >
+                        <img
+                            src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill}/${skill}-original.svg`}
+                        />
+                    </a>
                 ))}
             </div>
         </section>
