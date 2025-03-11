@@ -2,13 +2,14 @@
 
 :root {
     /* Background Colours */
-    --background: hsl(0, 0%, 96%);
-    --background-accent: hsl(0, 0%, 90%);
-    --background-accent-2: hsl(0, 0%, 80%);
+    --background: #f2f3f5;
+    --background-accent: #e2e4e9;
+    --background-accent-2: #c5cad3;
+    --background-hover: #0d131c1c;
 
     /* Text Colours */
-    --text: hsl(0, 0%, 4%);
-    --text-accent: hsl(0, 0%, 25%);
+    --text: #0d131c;
+    --text-accent: #0d131c40;
 
     /* Accent Colours */
     --accent: #699ce2;

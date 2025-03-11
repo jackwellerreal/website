@@ -1,8 +1,13 @@
 {
     "name": "Jack Weller",
     "description": "Currently working on my Certificate III in Information Technology",
-    "github": "jackwellerreal",
-    "bitcoin": "bc1pz33pxxuxz4jcapkulr5k0haf2kednfwev7xkvcvhdh2rp2qy0rds4nmdrl",
+    "socials": {
+        "twitter": "",
+        "github": "jackwellerreal",
+        "linkedin": "",
+        "email": "",
+        "bitcoin": "bc1pz33pxxuxz4jcapkulr5k0haf2kednfwev7xkvcvhdh2rp2qy0rds4nmdrl"
+    },
     "skills": [
         "react",
         "nodejs",

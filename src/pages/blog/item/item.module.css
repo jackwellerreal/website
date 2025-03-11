@@ -90,7 +90,7 @@ main .content code {
     font-weight: 400;
     background-color: var(--background-accent);
     border: 1px solid var(--background-accent-2);
-    border-radius: 5px;
+    border-radius: 8px;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
@@ -103,7 +103,7 @@ main .content pre {
     font-weight: 400;
     background-color: var(--background-accent);
     border: 1px solid var(--background-accent-2);
-    border-radius: 5px;
+    border-radius: 16px;
     overflow-x: auto;
 }
 

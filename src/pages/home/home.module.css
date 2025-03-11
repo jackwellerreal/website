@@ -33,7 +33,7 @@ main section .item {
 
 main section .item:hover {
     transition: 0.3s background-color;
-    background-color: var(--background-accent-2);
+    background-color: var(--background-hover);
 }
 
 main section .item a {
