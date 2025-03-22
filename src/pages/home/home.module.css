@@ -13,11 +13,12 @@ main section {
 }
 
 main section h2 {
+    font-size: var(--font-medium);
     margin-bottom: 16px;
 }
 
-main section #about p {
-    font-size: 24px;
+main section p {
+    font-size: var(--font-smaller);
 }
 
 main section .items {
@@ -30,17 +31,18 @@ main section .items .item,
 main section .items .skill-item {
     padding: 8px;
     border-radius: 8px;
-    transition: 0.3s background-color;
+    transition: var(--transition-speed) var(--transition-type) background-color;
 }
 
 main section .items .item:hover,
 main section .items .skill-item:hover {
-    background-color: var(--background-hover);
+    background-color: var(--background-accent);
 }
 
 main section .items .skill-item {
     display: block;
     font-size: 0px;
+    border-radius: 10px;
 }
 
 main section .items .item a {

@@ -15,7 +15,7 @@
 .header h1 {
     color: var(--accent);
     font-family: var(--font-title);
-    font-size: 32px;
+    font-size: var(--font-xlarge);
     font-weight: 900;
 }
 
@@ -28,15 +28,11 @@
 .header nav a {
     padding: 8px 16px;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: var(--transition-speed) var(--transition-type);
 }
 
 .header nav a:hover {
-    background-color: var(--accent-hover) !important;
-}
-
-.header nav a.selected {
-    background-color: var(--accent-selected);
+    background-color: var(--background-accent) !important;
 }
 
 @media (max-width: 960px) {

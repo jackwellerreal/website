@@ -1,5 +1,5 @@
-import { useParams } from "react-router";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router";
 
 import styles from "../../../pages/blog/item/item.module.css";
 
@@ -14,6 +14,7 @@ export function BlogItemComponent() {
     const [metadata, setMetadata] = useState(null);
     const [content, setContent] = useState("");
     const [readTime, setReadTime] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     function calculateReadTime(text) {
         const wordCount = text.split(/\s+/).length;
@@ -41,6 +42,22 @@ export function BlogItemComponent() {
 
         fetchBlogData();
     }, [blogId]);
+
+    useEffect(() => {
+        window.addEventListener(
+            "scroll",
+            () => {
+                setScrollPosition(window.pageYOffset);
+            },
+            { passive: true }
+        );
+
+        return () => {
+            window.removeEventListener("scroll", () => {
+                setScrollPosition(window.pageYOffset);
+            });
+        };
+    }, []);
 
     if (!metadata || !content) {
         return (
@@ -111,6 +128,19 @@ export function BlogItemComponent() {
                             </a>
                         </p>
                     </div>
+                    {scrollPosition > 100 && (
+                        <button
+                            className={styles["scroll-to-top"]}
+                            onClick={() => window.scrollTo(0, 0)}
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                            >
+                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                            </svg>
+                        </button>
+                    )}
                 </>
             )}
         </>
