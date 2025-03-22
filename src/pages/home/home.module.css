@@ -26,37 +26,44 @@ main section .items {
     gap: 32px;
 }
 
-main section .item {
+main section .items .item,
+main section .items .skill-item {
     padding: 8px;
     border-radius: 8px;
+    transition: 0.3s background-color;
 }
 
-main section .item:hover {
-    transition: 0.3s background-color;
+main section .items .item:hover,
+main section .items .skill-item:hover {
     background-color: var(--background-hover);
 }
 
-main section .item a {
+main section .items .skill-item {
+    display: block;
+    font-size: 0px;
+}
+
+main section .items .item a {
     display: block;
 }
 
-main section .item img {
+main section .items .item img {
     width: 100%;
     aspect-ratio: 16/9;
     border-radius: 4px;
 }
 
-main section .item h3,
-main section .item p {
+main section .items .item h3,
+main section .items .item p {
     display: flex;
     justify-content: space-between;
 }
 
-main section .item p {
+main section .items .item p {
     margin-top: 4px;
 }
 
-main section .item svg {
+main section .items .item svg {
     height: 20px;
     fill: var(--text);
 }

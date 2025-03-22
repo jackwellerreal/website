@@ -18,6 +18,7 @@ export function SkillsComponent() {
                         key={index}
                         href={`https://www.google.com/search?q=${skill}`}
                         target="_blank"
+                        className={styles["skill-item"]}
                     >
                         <img
                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${skill}/${skill}-original.svg`}
