@@ -31,9 +31,10 @@
         --background-accent: hsl(216, 14%, 85%);
         --background-accent-2: hsl(216, 14%, 80%);
         --background-accent-3: hsl(216, 14%, 70%);
+        --background-accent-4: hsl(216, 14%, 60%);
+        --background-accent-5: hsl(216, 14%, 50%);
 
         --text: hsl(216, 37%, 8%);
-        --text-accent: hsla(216, 37%, 8%, 0.25);
     }
 }
 
@@ -47,9 +48,10 @@
         --background-accent: hsl(216, 37%, 15%);
         --background-accent-2: hsl(216, 37%, 20%);
         --background-accent-3: hsl(216, 37%, 30%);
+        --background-accent-4: hsl(216, 37%, 40%);
+        --background-accent-5: hsl(216, 37%, 50%);
 
         --text: hsl(216, 14%, 95%);
-        --text-accent: hsla(216, 14%, 95%, 0.25);
     }
 }
 

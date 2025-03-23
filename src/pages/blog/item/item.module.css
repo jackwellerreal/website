@@ -30,9 +30,12 @@ main .title .subtitle {
     gap: 8px;
     width: 100%;
     margin: 0 auto;
-    font-size: var(--font-medium);
+}
+
+main .title .subtitle span {
+    font-size: var(--font-small);
     font-weight: 400;
-    color: var(--text-accent);
+    opacity: 75%;
 }
 
 main .title img {
@@ -89,7 +92,6 @@ main .content code {
     font-size: var(--font-xsmall);
     font-weight: 400;
     background-color: var(--background-accent);
-    border: 1px solid var(--background-accent-2);
     border-radius: 8px;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -102,7 +104,6 @@ main .content pre {
     font-size: var(--font-xsmall);
     font-weight: 400;
     background-color: var(--background-accent);
-    border: 1px solid var(--background-accent-2);
     border-radius: 16px;
     overflow-x: auto;
 }
