@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import "./styles.css";
@@ -8,23 +8,42 @@ import { ProjectsPage } from "./pages/projects";
 import { BlogPage } from "./pages/blog";
 import { BlogItemPage } from "./pages/blog/item";
 import { NotFoundPage } from "./pages/not-found";
+import { Root } from "./root";
 
-const root = document.getElementById("root");
-
-ReactDOM.createRoot(root).render(
+createRoot(document.getElementById("root")).render(
     <BrowserRouter>
         <Routes>
-            <Route index element={<HomePage />} />
+            <Route index element={
+                <Root>
+                    <HomePage />
+                </Root>
+            } />
 
             <Route path="projects">
-                <Route index element={<ProjectsPage />} />
+                <Route index element={
+                    <Root>
+                        <ProjectsPage />
+                    </Root>
+                } />
             </Route>
             <Route path="blog">
-                <Route index element={<BlogPage />} />
-                <Route path=":id" element={<BlogItemPage />} />
+                <Route index element={
+                    <Root>
+                        <BlogPage />
+                    </Root>
+                } />
+                <Route path=":id" element={
+                    <Root>
+                        <BlogItemPage />
+                    </Root>
+                } />
             </Route>
 
-            <Route path="*" element={<NotFoundPage />} status={404} />
+            <Route path="*" element={
+                <Root>
+                    <NotFoundPage />
+                </Root>
+            } status={404} />
         </Routes>
     </BrowserRouter>
 );
