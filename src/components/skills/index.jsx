@@ -1,14 +1,10 @@
-import { useNavigate } from "react-router";
-
 import styles from "../../pages/home/home.module.css";
 import content from "../../../content.json";
 
 export function SkillsComponent() {
-    const navigate = useNavigate();
-
     return (
         <section id="skills">
-            <h2 onClick={() => navigate("/skills")}>Skills</h2>
+            <h2>Skills</h2>
             <div
                 id="skillItems"
                 className={styles["items"]}
