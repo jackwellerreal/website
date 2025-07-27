@@ -9,7 +9,7 @@ export function BlogComponent() {
 
     return (
         <section id="blog">
-            <h2 onClick={() => navigate("/blog")}>Blog</h2>
+            <h2 onClick={() => navigate("/blog")} style={{ cursor: "pointer" }}>Blog</h2>
             <div id="blogItems" className={styles["items"]}>
                 {content.blog.map((blog, index) => {
                     if (blog.hide) return null;

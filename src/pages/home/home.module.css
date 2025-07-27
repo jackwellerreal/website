@@ -16,7 +16,6 @@ main section h2 {
     width: fit-content;
     font-size: var(--font-medium);
     margin-bottom: 16px;
-    cursor: pointer;
 }
 
 main section p {

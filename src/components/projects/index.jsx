@@ -8,7 +8,7 @@ export function ProjectsComponent() {
 
     return (
         <section id="projects">
-            <h2 onClick={() => navigate("/projects")}>Projects</h2>
+            <h2 onClick={() => navigate("/projects")} style={{ cursor: "pointer" }}>Projects</h2>
             <div id="projectItems" className={styles["items"]}>
                 {content.projects.map((project, index) => (
                     <div key={index} className={styles["item"]}>
