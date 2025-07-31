@@ -99,30 +99,14 @@ This is very cool but has a major downside, it only works with pickup in-store o
 
 After two months of trying to get in contact with their parent company, Craveable Brands, I finally got a response from the Cheif Information Officer who was very thankful for my report and immediately contacted his development team to start working on a fix. And of course this happened on a Friday, I feel bad for the developers who are about to go home for the weekend and were informed of a critical security issue that needed to be fixed.
 
-After about a week from getting in contact, I recieved a "small gift" in the mail with 4 $50 vouchers for Red Rooster.
-
-<img src="./assets/reward.png" alt="4, $50 Red Rooster Vouchers" width="50%" style="width:50%;"/>
+After about a week from getting in contact, I recieved a gift in the mail containing $200 worth of vouchers for Red Rooster.
 
 ## Conclusion
 
-This was my first experience with discovering a security vulnerability in a major company, and it was a lot of fun tinkering with the website to find a way to get free food.
+This was my first experience with discovering a security vulnerability in a major company, and it was a lot of fun tinkering with the website to find a way to get free food, it is a shame it was this easy to do, but I am glad that I was able to report it to the company and help them fix it.
 
 In my ICT class for school, we were taught how to change prices on websites using the developer tools, but I never thought that would apply to the real world. Turns out, it does.
 
 Remember, ALWAYS get permission before you try to find vulnerabilities in a website. I was lucky that Red Rooster was understanding and thankful for my report, but not all companies are like that.
 
 ### Thanks for reading!
-
----
-
-## Timeline
-
-- December 10, 2024: I discovered the exploit on Red Rooster's website, which allows manipulated orders to be placed without payment.
-- December 11, 2024 - December 23, 2024: I send numerous emails to Craveable Brands, the parent company of Red Rooster, but got no response.
-- January 28, 2025: I sent a message to their contact form on their website, telling them what I had found.
-- **January 29, 2025: I recieved an email from Craveable Brands asking for more information.**
-- January 30, 2025: I responded with a detailed explanation of the exploit.
-- Febuary 12, 2025: I followed up with Craveable Brands to see if they had made any progress.
-- Febuary 14, 2025: I recieved an email from support saying that they were working on a fix.
-- **Febuary 14, 2025: I recieved an email from the Cheif Information Officer of Craveable Brands thanking me for my report and informing me that they were working on a fix.**
-- Febuary 21, 2025: I revieded a "small gift" in the mail with 4 50$ vouchers for Red Rooster.

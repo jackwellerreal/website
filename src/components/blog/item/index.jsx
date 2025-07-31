@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import PropTypes from "prop-types";
+
+import { Helmet } from "react-helmet-async";
 
 import styles from "../../../pages/blog/item/item.module.css";
 
@@ -79,6 +82,8 @@ export function BlogItemComponent() {
                 </div>
             ) : (
                 <>
+                    <Metadata content={metadata} />
+
                     <div className={styles["title"]}>
                         <img src={metadata.image} alt="Blog title" />
                         <h1>{metadata.title}</h1>
@@ -146,3 +151,36 @@ export function BlogItemComponent() {
         </>
     );
 }
+
+function Metadata({ content }) {
+    return (
+        <Helmet>
+            <title>{content.title} - Jack Weller</title>
+            <meta name="description" content={content.description} />
+            <meta name="theme-color" content="#699ce2" />
+
+            <meta property="og:title" content={content.title} />
+            <meta property="og:description" content={content.description} />
+            <meta property="og:image" content={content.image} />
+            <meta property="og:type" content="article" />
+            <meta property="og:url" content={window.location.href} />
+            <meta
+                property="twitter:card"
+                content="summary_large_image"
+            />
+            <meta property="twitter:title" content={content.title} />
+            <meta property="twitter:description" content={content.description} />
+            <meta property="twitter:image" content={content.image} />
+        </Helmet>
+    );
+}
+
+Metadata.propTypes = {
+    content: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        date: PropTypes.string,
+        share: PropTypes.string,
+    }).isRequired,
+};

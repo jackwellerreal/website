@@ -7,10 +7,7 @@ export function SkillsComponent() {
             <h2>Skills</h2>
             <div
                 id="skillItems"
-                className={styles["items"]}
-                style={{
-                    gridTemplateColumns: `repeat(${content.skills.length}, 1fr)`,
-                }}
+                className={`${styles["items"]} ${styles["items-skills"]}`}
             >
                 {content.skills.map((skill, index) => (
                     <a

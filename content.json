@@ -27,7 +27,7 @@
             "date": "16/02/2025",
             "share": "This%20high%20school%20student%20hacked%20Australia%27s%20biggest%20chicken%20chain%20to%20get%20free%20food!%0A%0Ahttps%3A%2F%2Fjackweller.me%2Fblog%2Fredrooster%2F",
             "featuredin": [],
-            "hide": true
+            "hide": false
         }
     ],
     "projects": [
@@ -42,24 +42,24 @@
             "description": "I redesigned the Bureau of Meteorology website because it's extremely outdated."
         },
         {
-            "repo": "https://github.com/jackwellerreal/nodejs-maze",
-            "title": "NodeJS Maze",
-            "description": "This is a maze game that I made for a hackerthon. It runs in the CLI and is really inefficient."
-        },
-        {
-            "repo": "https://github.com/jackwellerreal/konnect",
-            "title": "Konnect",
-            "description": "This is my first major project I've worked on. It's a twitter clone made using React and Firebase."
-        },
-        {
             "repo": "https://github.com/jackwellerreal/bom-radar",
             "title": "BOM Radar GIF",
             "description": "This uses the BOM FTP server to get radar images and stitches them together together into a GIF."
         },
         {
-            "repo": "https://github.com/jackwellerreal/projectmanager",
-            "title": "Project Manager",
-            "description": "I created this so I can easily create folders for my projects, it also has templates for React, etc."
+            "repo": "https://github.com/jackwellerreal/nodejs-maze",
+            "title": "NodeJS Maze",
+            "description": "This is a maze game that I made for a hackerthon. It runs in the CLI and is really inefficient."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/skyguessr",
+            "title": "SkyGuessr",
+            "description": "This is a recreation of GeoGuessr but with locations from Hypixel Skyblock."
+        },
+        {
+            "repo": "https://github.com/jackwellerreal/bazaar",
+            "title": "Bazaar",
+            "description": "This is a game which simulates the Hypixel Skyblock Bazaar so you can practice without losing coins."
         }
     ]
 }

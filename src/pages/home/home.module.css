@@ -28,6 +28,10 @@ main section .items {
     gap: 32px;
 }
 
+main section .items-skills {
+    grid-template-columns: repeat(8, 1fr);
+}
+
 main section .items .item,
 main section .items .skill-item {
     padding: 8px;
@@ -83,10 +87,24 @@ main section .items .item svg {
     main section .items {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    main section .items-skills {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main section .items-skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media (max-width: 560px) {
     main section .items {
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+    main section .items-skills {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
