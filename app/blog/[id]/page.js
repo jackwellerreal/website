@@ -24,16 +24,14 @@ export async function generateMetadata({ params }) {
             title: `${metadata.title} - Jack Weller`,
             description: description,
             openGraph: {
+                type: "article",
+                image: metadata.image,
                 title: metadata.title,
                 description: description,
-                images: [metadata.image],
-                type: "article",
             },
             twitter: {
                 card: "summary_large_image",
-                title: metadata.title,
-                description: description,
-                images: [metadata.image],
+                image: metadata.image,
             },
         };
     } catch (error) {
