@@ -1,0 +1,136 @@
+@import url(../public/fonts/fonts.css);
+
+:root {
+    --accent: hsl(215, 68%, 65%);
+    --accent-hover: hsla(215, 68%, 65%, 0.5);
+    --accent-selected: hsla(215, 68%, 65%, 0.25);
+
+    --font-normal: "Poppins", system-ui, sans-serif;
+    --font-title: "Coming Soon", "Poppins", system-ui, sans-serif;
+    --font-code: "Fira Code", Consolas, monospace;
+
+    --font-xlarge: 32px;
+    --font-larger: 30px;
+    --font-large: 28px;
+    --font-medium: 24px;
+    --font-small: 20px;
+    --font-smaller: 18px;
+    --font-xsmall: 16px;
+
+    --transition-speed: 0.2s;
+    --transition-type: ease;
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        color-scheme: light;
+    }
+
+    :root {
+        --background: hsl(216, 14%, 95%);
+        --background-accent: hsl(216, 14%, 85%);
+        --background-accent-2: hsl(216, 14%, 80%);
+        --background-accent-3: hsl(216, 14%, 70%);
+        --background-accent-4: hsl(216, 14%, 60%);
+        --background-accent-5: hsl(216, 14%, 50%);
+
+        --text: hsl(216, 37%, 8%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+
+    :root {
+        --background: hsl(216, 37%, 8%);
+        --background-accent: hsl(216, 37%, 15%);
+        --background-accent-2: hsl(216, 37%, 20%);
+        --background-accent-3: hsl(216, 37%, 30%);
+        --background-accent-4: hsl(216, 37%, 40%);
+        --background-accent-5: hsl(216, 37%, 50%);
+
+        --text: hsl(216, 14%, 95%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text);
+    color-scheme: light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-normal);
+    background-color: var(--background);
+}
+
+img {
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-bottom: 4px dotted var(--accent);
+    margin: 16px 0;
+}
+
+button {
+    padding: 16px;
+    font-size: var(--font-medium);
+    font-weight: 700;
+    background-color: var(--background-accent);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition-speed) var(--transition-type) background-color;
+}
+
+button:hover {
+    background-color: var(--background-accent-2);
+}
+
+button svg {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+    fill: var(--text);
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-accent-2);
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-accent-3);
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
