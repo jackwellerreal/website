@@ -25,13 +25,15 @@ export async function generateMetadata({ params }) {
             description: description,
             openGraph: {
                 type: "article",
-                image: metadata.image,
+                images: [metadata.image],
                 title: metadata.title,
                 description: description,
             },
             twitter: {
                 card: "summary_large_image",
-                image: metadata.image,
+                images: [metadata.image],
+                title: metadata.title,
+                description: description,
             },
         };
     } catch (error) {

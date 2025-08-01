@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         type: "website",
         url: "https://www.jackweller.me",
-        image: "/images/title.png",
+        images: ["/images/title.png"],
         title: "Jack Weller",
         description:
             "My personal website. Here I share my projects and post what I'm up to on my blog",
@@ -18,7 +18,10 @@ export const metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        image: "/images/title.png",
+        images: ["/images/title.png"],
+        title: "Jack Weller",
+        description:
+            "My personal website. Here I share my projects and post what I'm up to on my blog",
     },
     icons: {
         icon: "/images/icon.png",
