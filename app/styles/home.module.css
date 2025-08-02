@@ -141,7 +141,12 @@
 
 .main .section .items .item svg {
     height: 20px;
-    fill: var(--text);
+    fill: var(--accent-hover);
+    transition: var(--transition-speed) var(--transition-type) fill;
+}
+
+.main .section .items .item:hover svg {
+    fill: var(--accent);
 }
 
 .main .title {
