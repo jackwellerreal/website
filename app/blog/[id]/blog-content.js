@@ -10,7 +10,6 @@ import styles from "../../styles/home.module.css";
 import content from "../../../content.json";
 
 export default function BlogContent({ blogId }) {
-
     const [metadata, setMetadata] = useState(null);
     const [blogContent, setBlogContent] = useState("");
     const [readTime, setReadTime] = useState(0);
@@ -121,9 +120,9 @@ export default function BlogContent({ blogId }) {
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512"
+                        viewBox="0 0 448 512"
                     >
-                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+                        <path d="M413 251.562C405.14 259.812 394.578 264 384 264C374.093 264 364.187 260.344 356.453 253L264 165.18V440C264 462.094 246.093 480 224 480S184 462.094 184 440V165.18L91.547 253C75.562 268.188 50.234 267.531 35 251.562C19.781 235.531 20.437 210.219 36.453 195L196.453 43C211.89 28.312 236.109 28.312 251.547 43L411.547 195C427.562 210.219 428.218 235.531 413 251.562Z" />
                     </svg>
                 </button>
             )}
