@@ -95,7 +95,7 @@ The code below shows an example of the cart variable in the session storage.
 }
 ```
 
-This is very cool but has a major downside, it only works with pickup in-store orders, and not delivery; this is because the delivery is controlled by DoorDash and has more extensive checks to ensure .
+This is very cool but has a major downside, it only works with pickup in-store orders, and not delivery; this is because the delivery is controlled by DoorDash and has more extensive checks to ensure nothing fishy is happening.
 
 After two months of trying to get in contact with their parent company, Craveable Brands, I finally got a response from the Cheif Information Officer who was very thankful for my report and immediately contacted his development team to start working on a fix. And of course this happened on a Friday, I feel bad for the developers who are about to go home for the weekend and were informed of a critical security issue that needed to be fixed.
 

@@ -21,13 +21,22 @@
     "experience": [],
     "blog": [
         {
-            "id": "redrooster",
+            "id": "freereds",
             "title": "How I hacked Red Rooster to get unlimited free food",
-            "image": "/blog/redrooster/assets/title.jpg",
+            "image": "/blog/freereds/assets/title.jpg",
             "date": "16/02/2025",
-            "share": "This%20high%20school%20student%20hacked%20Australia%27s%20biggest%20chicken%20chain%20to%20get%20free%20food!%0A%0Ahttps%3A%2F%2Fjackweller.me%2Fblog%2Fredrooster%2F",
+            "share": "This%20high%20school%20student%20hacked%20Australia%27s%20biggest%20chicken%20chain%20to%20get%20free%20food%21%0A%0Ahttps%3A%2F%2Fjackweller.me%2Fblog%2Ffreereds%2F",
             "featuredin": [],
-            "hide": false
+            "hide": true
+        },
+        {
+            "id": "redsdatabreach",
+            "title": "Red Rooster: The Obvious Data Breach",
+            "image": "/blog/redsdatabreach/assets/title.png",
+            "date": "",
+            "share": "This%20high%20school%20student%20found%20a%20data%20breach%20in%20Australia%27s%20biggest%20chicken%20chain%21%0A%0Ahttps%3A%2F%2Fjackweller.me%2Fblog%2Fredsdatabreach%2F",
+            "featuredin": [],
+            "hide": true
         }
     ],
     "projects": [

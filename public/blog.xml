@@ -7,8 +7,13 @@
 		<language>en-AU</language>
 		<item>
 			<title>How I hacked Red Rooster to get unlimited free food</title>
-			<link>https://www.jackweller.me/blog/redrooster/</link>
+			<link>https://www.jackweller.me/blog/freereds/</link>
 			<pubDate>16 Feb 2025</pubDate>
+		</item>
+		<item>
+			<title>Red Rooster: The Obvious Data Breach</title>
+			<link>https://www.jackweller.me/blog/redsdatabreach/</link>
+			<pubDate> 2025</pubDate>
 		</item>
 	</channel>
 </rss>

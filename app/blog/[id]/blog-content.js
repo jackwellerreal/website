@@ -105,12 +105,6 @@ export default function BlogContent({ blogId }) {
                     }}
                 >
                     <Link href="/blog">Back to blog</Link>
-                    <a
-                        href={`https://twitter.com/intent/tweet?text=${metadata.share}`}
-                        target="_blank"
-                    >
-                        Share on Twitter
-                    </a>
                 </p>
             </div>
             {scrollPosition > 100 && (
