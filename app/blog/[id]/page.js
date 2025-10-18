@@ -25,6 +25,8 @@ export async function generateMetadata({ params }) {
             description: description,
             openGraph: {
                 type: "article",
+                siteName: "Jack Weller",
+                url: `https://www.jackweller.me/blog/${metadata.id}`,
                 images: [metadata.image],
                 title: metadata.title,
                 description: description,
