@@ -6,7 +6,6 @@ export const metadata = {
     title: "Jack Weller",
     description:
         "My personal website. Here I share my projects and post what I'm up to on my blog",
-    themeColor: "#699ce2",
     openGraph: {
         type: "website",
         url: "https://www.jackweller.me",
@@ -27,6 +26,11 @@ export const metadata = {
         icon: "/images/icon.png",
     },
 };
+
+export const viewport = {
+    themeColor: "#699ce2",
+    colorScheme: "dark"
+}
 
 export default function RootLayout({ children }) {
     return (
