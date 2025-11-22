@@ -16,10 +16,10 @@ export default function HomePage() {
                 <section id="about" className={styles["section"]}>
                     {content.description && <p>{content.description}</p>}
                 </section>
-                {content.skills.length > 0 && <SkillsComponent />}
-                {content.experience.length > 0 && <ExperienceComponent />}
-                {content.blog.length > 0 && <BlogComponent />}
-                {content.projects.length > 0 && <ProjectsComponent />}
+                {content.skills?.length > 0 && <SkillsComponent />}
+                {content.experience?.length > 0 && <ExperienceComponent />}
+                {content.blog?.length > 0 && <BlogComponent />}
+                {content.projects?.length > 0 && <ProjectsComponent />}
             </main>
             <Footer />
         </div>

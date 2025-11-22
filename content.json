@@ -49,5 +49,6 @@
             "title": "Where is my Bus?",
             "description": "This uses the translink API to show the location of buses in South East Queensland."
         }
-    ]
+    ],
+    "blog": []
 }
